@@ -1,0 +1,7 @@
+diff -Naurp python-requests-unixsocket-0.1.5.orig/pytest.ini python-requests-unixsocket-0.1.5/pytest.ini
+--- python-requests-unixsocket-0.1.5.orig/pytest.ini	2014-11-25 12:18:22.000000000 -0500
++++ python-requests-unixsocket-0.1.5/pytest.ini	2016-02-17 09:10:40.939362559 -0500
+@@ -1,2 +1,2 @@
+ [pytest]
+-addopts = --tb=short --pep8
++addopts = --tb=short

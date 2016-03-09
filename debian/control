@@ -1,0 +1,44 @@
+Source: python-requests-unixsocket
+Section: python
+Priority: optional
+Maintainer: Chuck Short <zulcss@buntu.com>
+Build-Depends: debhelper (>=9),
+               dh-python, 
+               python-all (>= 2.6.6-3~),
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+               python-pbr,
+               python3-pbr
+Build-Depends-Indep: python-requests,
+                     python-urllib3,
+                     python3-requests,
+                     python3-urllib3,
+                     python-waitress,
+                     python3-waitress,
+                     python-pytest,
+                     python3-pytest
+Standards-Version: 3.9.6
+Homepage: https://github.com/msabramo/requests-unixsocket
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+
+Package: python-requests-unixsocket
+Architecture: all
+Depends: python-requests, ${python:Depends}, ${misc:Depends}
+Description: use requests to talk HTTP via a UNIX domain socket (Python 2)
+ Requests is an HTTP library, written in Python, for human beings. This
+ library adds optional support for requests to talk to HTTP via a UNIX
+ socket.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-requests-unixsocket
+Architecture: all
+Depends: python-requests, ${python3:Depends}, ${misc:Depends}
+Description: use requests to talk HTTP via a UNIX domain socket (Python 3)
+ Requests is an HTTP library, written in Python, for human beings. This
+ library adds optional support for requests to talk to HTTP via a UNIX
+ socket.
+ .
+ This package installs the library for Python 3.
